@@ -47,7 +47,7 @@ public class Calculadora {
                     }
                     break;
                 } default:
-                    System.out.println("A opç~cao escolhida é inválida! Informe um número entre 1 e 4");
+                    System.out.println("A opção escolhida é inválida! Informe um número entre 1 e 4");
         }
 
 
