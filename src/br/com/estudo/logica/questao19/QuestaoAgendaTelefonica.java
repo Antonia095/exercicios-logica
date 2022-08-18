@@ -5,10 +5,10 @@ public class QuestaoAgendaTelefonica {
       as interações de adicionar e deletar números.*/
     public static void main(String[] args) {
 
-        var contato1 = new Pessoa("Ana", "856464456");
-        var contato2 = new Pessoa("Pedro", "132454564");
-        var contato3 = new Pessoa("Maria", "31345465464");
-        var contato4 = new Pessoa("João", "646546463");
+        var contato1 = new Contato("Ana", "856464456");
+        var contato2 = new Contato("Pedro", "132454564");
+        var contato3 = new Contato("Maria", "31345465464");
+        var contato4 = new Contato("João", "646546463");
 
         var agendaTelefonica = new AgendaTelefonica();
 

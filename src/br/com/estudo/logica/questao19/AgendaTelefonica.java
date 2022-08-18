@@ -4,31 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AgendaTelefonica {
-    private List<Pessoa> pessoas;
+    private List<Contato> contatos;
 
     public AgendaTelefonica() {
-        this.pessoas = new ArrayList<>();
+        this.contatos = new ArrayList<>();
     }
 
-    public void adicionarNumeroTelefonico(Pessoa pessoa) {
-        if (pessoa.getTelefone() == "Número inválido") {
+    public void adicionarNumeroTelefonico(Contato contato) {
+        if (contato.getTelefone() == "Número inválido") {
             System.out.println("Insira um número válido");
         } else {
-            this.pessoas.add(pessoa);
+            this.contatos.add(contato);
         }
     }
 
-    public void removerNumeroTelefonico(Pessoa pessoa) {
-        this.pessoas.remove(pessoa);
+    public void removerNumeroTelefonico(Contato contato) {
+        this.contatos.remove(contato);
     }
 
     public void alterarNumeroTelefonico(String nome, String telefone) {
         if(telefone.length() > 10 ) {
             System.out.println("O número do contado: " + nome + ", não pode ser alterado. Insira um número válido!");
         } else {
-             pessoas.forEach(pessoa -> {
-                if (pessoa.getNome().equals(nome)) {
-                    pessoa.setTelefone(telefone);
+             contatos.forEach(contato -> {
+                if (contato.getNome().equals(nome)) {
+                    contato.setTelefone(telefone);
                 }
             });
             imprimirListaTelefonica();
@@ -36,8 +36,8 @@ public class AgendaTelefonica {
     }
 
     public void imprimirListaTelefonica() {
-        pessoas.forEach(pessoa -> {
-            System.out.println("Contato: " + pessoa.getNome() + ", telefone: " + pessoa.getTelefone());
+        contatos.forEach(contato -> {
+            System.out.println("Contato: " + contato.getNome() + ", telefone: " + contato.getTelefone());
         });
     }
 }

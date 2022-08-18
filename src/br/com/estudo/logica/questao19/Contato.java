@@ -1,10 +1,10 @@
 package br.com.estudo.logica.questao19;
 
-public class Pessoa {
+public class Contato {
     private String nome;
     private String telefone;
 
-    public Pessoa(String nome, String telefone) {
+    public Contato(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
     }
